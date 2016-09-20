@@ -21,18 +21,39 @@ body {
 	scroll-behavior: smooth; /*仅有 FireFox 45 及以上版本支持该属性*/
 }
 
-div {
+.div {
 	height: 100%;
 	background:red;
 }
 
-div + div {
+.div + div {
 	background: blue;
 }
 
-div:nth-child(3){
+.div:nth-child(3){
 	background: yellow;
 }
+
+#page1 {
+    height: 100%; 
+    position: relative; 
+/*    animation:mymove 3s ease;
+*/}
+
+#page2 {
+	height: 100%; 
+	position: relative; 
+}
+
+#page3 {
+
+}
+
+#page4 {
+
+}
+
+
 
 .fixedButton {
 	position: fixed;
@@ -47,6 +68,12 @@ div:nth-child(3){
 .fixedButton + button {
 	top: 120px;
 }
+
+/*@keyframes mymove
+{
+from {top:0px;}
+to {top:200px;}
+}*/
 
 
 
